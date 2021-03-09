@@ -2,7 +2,7 @@ version: "3.8"
 services: 
   youtube-dl:
     build: ./
-    image: youtube-dl
+    image: mirakurun/youtube-dl
     volumes: 
       - ./youtube-dl.conf:/etc/youtube-dl.conf:ro
       - ./downloads:/app/downloads
