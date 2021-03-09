@@ -18,7 +18,7 @@ docker pull mirakurun/youtube-dl
 
 ## Usage
 
-### Option-1: Docker Build
+### Option-1: Docker CLI
 <br />
 
 ```sh
