@@ -9,6 +9,13 @@ Run youtube-dl inside a docker container.
 - [Install Docker](https://docs.docker.com/engine/installation/)
 - [Install Docker Compose](https://docs.docker.com/compose/install/)
 
+## Docker Hub
+
+```sh
+# Pull Docker Image From Docker Hub
+docker pull mirakurun/youtube-dl
+```
+
 ## Usage
 
 ### Option-1: Docker Build
@@ -19,10 +26,10 @@ Run youtube-dl inside a docker container.
 docker build -t youtube-dl .
 
 # Download Video
-docker run --rm -v $(pwd):/app youtube-dl -i -f https://www.youtube.com/...
+docker run --rm -v $(pwd):/app mirakurun/youtube-dl -i -f https://www.youtube.com/...
 
 # Extract Audio
-docker run --rm -v $(pwd):/app youtube-dl -i -x --audio-format m4a --audio-quality 0 https://www.youtube.com/...
+docker run --rm -v $(pwd):/app mirakurun/youtube-dl -i -x --audio-format m4a --audio-quality 0 https://www.youtube.com/...
 ```
 
 
